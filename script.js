@@ -1,4 +1,4 @@
-var menuBtn = document.querySelector('.menu-btn');
+var menuBtn = document.querySelector ('.menu-btn');
 var menu = document.querySelector('.nav-links');
 var menuLinks = document.querySelectorAll('.nav-links li a');
 
@@ -30,3 +30,28 @@ function scrollFunction(){
 		homeSection.classList.remove('active');
 	}
 }
+
+// for testimonials
+$('.testimonials-container').owlCarousel({
+    loop:true,
+    autoplay:true,
+    autoplayTime:6000,
+    margin:10,
+    nav:true,
+    navText:["<i class='fa-solid fa-arrow-left'></i>",
+             "<i class='fa-solid fa-arrow-right'></i>"],
+    responsive:{
+        0:{
+            items:1,
+            nav:false
+        },
+        600:{
+            items:1,
+            nav:true
+        },
+        768:{
+            items:2
+        }
+    }
+})
+
