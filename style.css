@@ -104,6 +104,7 @@ this is for the header */
     align-items: center;
     z-index: 100;
     transition: 0.4s;
+	 background-color: var(--bg-clr-three);
 }
 
 .header.active .navbar{
@@ -226,7 +227,7 @@ button .contact-btn{
 
 .home .home-desc p{
     max-width: 500px;
-    color: var(--bg-clr-two);
+    color: var(--text-clr);
     margin-top: 10px;
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
